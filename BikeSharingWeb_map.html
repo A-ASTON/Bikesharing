@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>Bike Sharing Website</title>
+        <link rel="stylesheet" href="BikeSharingWeb.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=CTAGDRcGnhIFFONuMNy7hIdOpofUrdYI"></script>
+        <script src="jquery.min.js"></script>
+	    <script src="bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="toptitle" id="t4">
+            <h2>Interactive<br>Maps</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="BikeSharingWeb_index.html">Home Page</a></li>
+                <li><a href="BikeSharingWeb_employee.html">Employee</a></li>
+                <li><a href="BikeSharingWeb_employer.html">Employer</a></li>
+                <li><a href="BikeSharingWeb_map.html">Interactive Map</a></li>
+                <li><a href="BikeSharingWeb_more.html">More</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <div class="socialMedia">
+                <div class="click">Social<br>Media<br><<</div>
+                <div class="list">
+                    <ul type="none">
+                        <li><a href="https://weibo.com/"><img class="social" src="images/weibo01.jpg" alt="新浪微博"></a></li>
+                        <li><a href="http://t.qq.com/"><img class="social" src="images/txweibo01.jpg" alt="腾讯微博"></a></li>
+                        <li><a href="https://wx.qq.com/"><img class="social" src="images/wechat03.png" alt="微信网页版"></a></li>
+                        <li><a href="https://www.facebook.com"><img class="social" src="images/facebook02.png" alt="Facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                Instructions for use: (Map function needs networking) You can drag and drop the map with the mouse; you can zoom in and out the map by rolling the mouse pulley on the map, and then move out to scroll pages.
+                <br>
+                After the mouse clicks on the map to select the target location (or by entering the target address) and the red mark appears on the map, click "Set as the starting point" or "Set as the end point".
+                <br>
+                Click on different modes of transportation to generate route planning
+                <br>
+                Search function, input keywords, click search, can search the current location of the city's target facilities
+            </div>
+            <div id="container"></div>
+            <form role="form">
+                    <table class="table table-striped" id="map_input">
+                    <tr>
+                        <td>The current city:</td>
+                        <td><input type="text" id="position" class="form-control" readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td><div id="r-result">Please enter the target address:</td>
+                        <td><input type="text" id="suggestId" class="form-control" size="20" value="百度" style="width:200px;" /></div></td>
+                        <div id="searchResultPanel" style="border:1px solid #C0C0C0;width: 150px;height:40px; display:none; overflow: scroll;"></div>
+                    </tr>
+                    <tr>
+                        <td><button type="button" id="start" class="btn btn-default btn-sm">Set it as a starting point</button></td>
+                        <td><button type="button" id="end" class="btn btn-default btn-sm">Set it as an end point</button></td>
+                    </tr>
+                    <tr>
+                        <td>Current starting point:</td>
+                        <td><input type="text" id="show_start" class="form-control" readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td>Current endpoint:</td>
+                        <td><input type="text" id="show_end" class="form-control" readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" id="riding" class="btn btn-default btn-sm">Riding</button>
+                            <button type="button" id="walking" class="btn btn-default btn-sm">Walking</button>
+                            <button type="button" id="driving" class="btn btn-default btn-sm">Driving</button>
+                            <button type="button" id="transit" class="btn btn-default btn-sm">Transiting</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="searching" class="form-control" value="自行车"></td>
+                        <td><button type="button" id="search" class="btn btn-default btn-sm">Search</button></td>
+                    </tr>
+                    </table>
+                </form>
+                
+            <footer>Copyright © <a href="https://github.com/ZiFengLiang">https://github.com/ZiFengLiang</a></footer>
+        </div>
+        
+        <script src="BikeSharingWeb.js"></script>
+    </body>
+</html>
