@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bik eSharing Website</title>
+        <link rel="stylesheet" href="BikeSharingWeb.css">
+        <link rel="stylesheet" href="bootstrap.min.css">  
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	    <script src="jquery.min.js"></script>
+	    <script src="bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="toptitle" id="t2">
+            <h2>The<br>Employee</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="BikeSharingWeb_index.html">Home Page</a></li>
+                <li><a href="BikeSharingWeb_employee.html">Employee</a></li>
+                <li><a href="BikeSharingWeb_employer.html">Employer</a></li>
+                <li><a href="BikeSharingWeb_map.html">Interactive Map</a></li>
+                <li><a href="BikeSharingWeb_more.html">More</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <div class="socialMedia">
+                <div class="click">Social<br>Media<br><<</div>
+                <div class="list">
+                    <ul type="none">
+                        <li><a href="https://weibo.com/"><img class="social" src="images/weibo01.jpg" alt="新浪微博"></a></li>
+                        <li><a href="http://t.qq.com/"><img class="social" src="images/txweibo01.jpg" alt="腾讯微博"></a></li>
+                        <li><a href="https://wx.qq.com/"><img class="social" src="images/wechat03.png" alt="微信网页版"></a></li>
+                        <li><a href="https://www.facebook.com"><img class="social" src="images/facebook02.png" alt="Facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content01">
+                <h1>Why should you choose cycling?</h1>
+                <ul type="none">
+                    <li><strong class="orange">Cycling can prevent brain aging and improve nervous system agility.</strong>Because in the process of cycling, we need to keep the balance of bicycle, tread the pedal, pay attention to the road condition, choose the safe route, turn the handlebars at any time, decide whether to brake or not according to the situation, and flexibly control the transmission device when going up and down the hill. When riding a bicycle on the general road, we should also pay attention to other road signs, observe the dynamics of the surrounding motor vehicles and pedestrians, and have sharp eyes enough to be able to pay attention to them. Be aware of the risk factors ahead. When riding a bicycle, you need to look at six roads and listen to all directions. You can instantly identify the various information received by the eyes, ears and nose and make a judgment. So bicycle is a kind of exercise that can activate the brain and make people smarter. Cycling is a contralateral dominant movement, alternating movement of the left and right legs, so that both sides of the brain can be developed at the same time, to prevent premature aging.</li>
+                    <li><br><strong class="orange">It can improve cardiopulmonary function, exercise lower limb muscle strength and general endurance.</strong></li>
+                    <li><br><strong class="orange">Can lose weight.</strong>Cycling is an excellent aerobic exercise. Aerobic exercise can absorb enough oxygen. It is an effective exercise to burn and store fat.</li>
+                    <li><br><strong class="orange">It can improve sexual function.</strong>Proper exercise can stimulate the secretion of androgen or estrogen, enhance sexual ability and promote the harmony of husband and wife's life.</li>
+                    <li><br><strong class="orange">Systemic exercise.</strong>Human muscles are mostly concentrated in the legs, and cycling is to keep the legs moving continuously. In addition, we also use the hand, wrist, back muscles, almost every muscle of the whole body has been exercised.</li>
+                    <li><br><strong class="orange">Free riding, more scenery.</strong>As long as the weather is fine, we can decide the destination of riding according to our mood, unlike other sports such as swimming, basketball is limited by venue and time. At the same time, cycling can enjoy more scenery than walking, more places than driving, and stop anywhere at will to enjoy the beautiful scenery.</li>
+                    <li><br><strong class="orange">Cycling is of great benefit to alleviating psychological stress and preventing depression.</strong></li>
+                    <li><br><strong class="orange">Cycling to work can avoid early rush hour traffic jams.</strong>If we use bus or private car to commute to work, it is unavoidable to encounter poor road conditions, all kinds of traffic jams, may be late (affect the relationship with the boss, or deduct wages), but also delay the time to get home from work.</li>
+                    <li><br><strong class="orange">The most important thing, of course, is environmental protection. Environmental protection. Environmental protection.</strong>Important things are to be repeated for 3 times. Nowadays, the air quality is getting worse and worse. The main reason is that there are a lot of exhaust emissions from automobiles and no exhaust from cycling, which makes a great contribution to our blue sky project. Of course, many people will take into account the exhaust of others when riding bicycles, only we take the necessary protective measures, which can be well avoided. If everyone is unwilling to make a change, our blue sky dream can only be a dream. It's just a dream. It's just a dream.</li>
+                </ul>
+                <hr>
+                <p>
+                    <h1>This website provides you with:</h1>
+                    <strong>Planning the Optimal Riding Route between Residence and Workplace:</strong>
+                    <br><strong>Bicycle Shop or Maintenance Site near you</strong>
+                    <br>For more information, please browse<a href="BikeSharingWeb_map.html" class="continue">"Interactive Map"</a>Understanding and Use
+                </p>
+                <hr>
+                <form>
+                    <fieldset>
+                    <legend><strong>Primary Cost Accounter<strong></legend>
+                    <h4>This function provides a cost comparison between different modes of transportation.</h4>
+                    <h5>It belongs to the primary function. In the future, it will automatically calculate the cost according to the mode together with the map function.
+                        <br>Here only <span class="orange">0.10 yuan</span> per liter of gasoline.
+                        <br><span class="orange">Two yuan</span> per bus
+                        <br>Shared bicycle <span class="orange">1 yuan</span> per hour
+                    </h5>
+                    <table id="counter" class="table table-striped">
+                        <tr>
+                            <td>Please enter mileage (kilometers):</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="km" class="form-control" ><span class="text-danger"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Fuel consumption per kilometer (private car,Litre):</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="L" class="form-control"><span class="text-danger"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Result:<input type="text" id="driving_result" class="form-control" readonly="readonly">￥</td>
+                        </tr>
+                        <tr>
+                            <td>Number of bus stops changed (Number of times):</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="times" class="form-control" ><span class="text-danger"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Result:<input type="text" id="busing_result" class="form-control" readonly="readonly">￥</td>
+                        </tr>
+                        <tr>
+                            <td>Cycling duration (hours):</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="hours" class="form-control" ><span class="text-danger"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Result:<input type="text" id="riding_result" class="form-control" readonly="readonly">￥</td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" id="calculate" class="btn btn-primary btn-lg">Calculate</button>&nbsp;&nbsp;&nbsp;<input type="reset" class="btn btn-primary btn-lg" value="Reset"></td>
+                        </tr>
+                    </table>
+                    </fieldset>
+                </form>
+            </div>
+            <footer>Copyright © <a href="https://github.com/ZiFengLiang">https://github.com/ZiFengLiang</a></footer>
+        </div>
+        
+        <script src="BikeSharingWeb.js"></script>
+    </body>
+</html>
